@@ -427,3 +427,42 @@ ul.listContainer .imagecontant p {
     z-index: 99;
     left: 20px;
 }
+
+.coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions{
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+    font-size: 28px;
+}
+
+
+.coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions h2{
+  background: #EF412F;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFF;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions p{
+    color: #00185E;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions button{
+    background-color: #fff;
+    color:#EF412F;
+    margin-bottom: 34px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 42px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    border: solid 1px #EF412F;
+}
