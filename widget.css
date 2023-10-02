@@ -37,8 +37,8 @@ ul.listContainer {
     flex-wrap: wrap;
 }
 
-ul.listContainer a *{
-    list-style: none;
+ul.listContainer a{
+    text-decoration: none;
 }
 
 ul.listContainer li {
@@ -52,12 +52,6 @@ ul.listContainer li .img img {
     width: 100%;
 }
 
-
-ul.listContainer li:first-child .imagecontant {
-    padding: 20px 15px;
-    width: 50%;
-    box-sizing: border-box;
-}
 
 ul.listContainer li .imagecontant {
     padding: 20px 15px;
@@ -90,18 +84,6 @@ ul.listContainer li .imagecontant .livebutton svg{
     margin-top:-2.6px;
 }
 
-ul.listContainer li:first-child {
-    width: 100%;
-    border-radius: 4px;
-    flex-direction: row;
-    gap: 16px;
-}
-
-
-ul.listContainer li:first-child .img {
-    width: calc(50% - 35px);
-}
-
 ul.listContainer .datetime {
     display: flex;
     gap: 20px;
@@ -121,13 +103,7 @@ ul.listContainer .datetime span:first-child:after {
     margin-top: 2px;
 }
 
-ul.listContainer li:first-child .datetime span {
-    color: #EF412F;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
+
 
 ul.listContainer .datetime span {
     color: #EF412F;
@@ -137,7 +113,41 @@ ul.listContainer .datetime span {
     line-height: normal;
 }
 
-ul.listContainer li:first-child h3.heading {
+
+ul.listContainer li:first-child a .imagecontant {
+    padding: 20px 15px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+ul.listContainer li:first-child  {
+    width: 100%;
+    display: flex;
+}
+
+ul.listContainer li:first-child a {
+    border-radius: 4px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+ul.listContainer li:first-child a .img {
+    width: calc(50% - 35px);
+}
+
+
+ul.listContainer li:first-child a .datetime span {
+    color: #EF412F;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+ul.listContainer li:first-child a h3.heading {
     color: #00185E;
     font-family: Noto Sans Devanagari;
     font-size: 38px;
@@ -148,7 +158,7 @@ ul.listContainer li:first-child h3.heading {
     text-transform: uppercase;
 }
 
-ul.listContainer li:first-child .imagecontant p {
+ul.listContainer li:first-child a .imagecontant p {
     color: #00185E;
     font-size: 20px;
     font-style: normal;
