@@ -59,7 +59,7 @@ ul.listContainer li .imagecontant {
 }
 
 ul.listContainer li .imagecontant .livebutton {
-    border-radius: 0px 12px 12px 0px;
+    border-radius: 0px 50px 50px 0px;
     background: #EF412F;
     color: #FFF;
     font-size: 14px;
@@ -69,7 +69,7 @@ ul.listContainer li .imagecontant .livebutton {
     letter-spacing: 0.56px;
     text-transform: uppercase;
     padding-top: 7px !important;
-    padding: 6px;
+    padding: 0 18px 4px 18px;
     display: flex;
     margin-bottom: 15px;
     width: min-content;
@@ -353,6 +353,11 @@ ul.listContainer .imagecontant p {
     height: 30px;
 }
 
+.coverage-detailed .tabs-box .cov-grid .cov-widget ul {
+    max-height: 600px;
+    overflow-y: scroll;
+    height: 600px;
+}
 .coverage-detailed .tabs-box .cov-grid .cov-widget .feed-lst {
     display: flex;
     flex-direction: column;
@@ -501,6 +506,12 @@ ul.listContainer .imagecontant p {
         width: 100%;
     }
 
+    .coverage-detailed .tabs-box .cov-grid .cov-widget ul {
+        max-height: unset;
+        overflow-y: unset;
+        height: unset;
+    }
+
     ul.listContainer li,
     ul.listContainer li:first-child .img,
     ul.listContainer li:first-child .imagecontant {
@@ -572,4 +583,18 @@ ul.listContainer .imagecontant p {
 
 }
 
+.coverage-detailed .tabs-box .related-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
+.coverage-detailed .tabs-box .related-grid .related-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.coverage-detailed .tabs-box .related-grid .related-list li {
+    width: calc(33% - 16px);
+}
