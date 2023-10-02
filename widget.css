@@ -467,6 +467,10 @@ ul.listContainer .imagecontant p {
     border: solid 1px #EF412F;
 }
 
+ #contentTwo, #contentThree, #contentFour, #contentFive {
+    display: none;
+}
+
 
 
 @media only screen and (max-width: 767px) {

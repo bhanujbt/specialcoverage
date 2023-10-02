@@ -318,15 +318,15 @@
             <div class="tabs-box">
                 <div class="cov-nav">
                     <ul class="tabs">
-                        <li><a href=""><img src="./images/news-story.svg" alt="icons" class="icon"><span>न्यूज़
+                        <li><a id="tabOne"><img src="./images/news-story.svg" alt="icons" class="icon"><span>न्यूज़
                                     स्टोरीज</span></a></li>
-                        <li><a href=""><img src="./images/web-stories.svg" alt="icons" class="icon"><span>वेब
+                        <li><a id="tabTwo"><img src="./images/web-stories.svg" alt="icons" class="icon"><span>वेब
                                     स्टोरीज</span></a></li>
-                        <li><a href=""><img src="./images/video.svg" alt="icons" class="icon"><span>विडियो</span></a>
+                        <li><a id="tabThree"><img src="./images/video.svg" alt="icons" class="icon"><span>विडियो</span></a>
                         </li>
-                        <li><a href=""><img src="./images/poll.svg" alt="icons" class="icon"><span>सुझाव दें</span></a>
+                        <li><a id="tabFour><img src="./images/poll.svg" alt="icons" class="icon"><span>सुझाव दें</span></a>
                         </li>
-                        <li><a href=""><img src="./images/live-scores.svg" alt="icons" class="icon"><span>लाइव
+                        <li><a id="tabFive><img src="./images/live-scores.svg" alt="icons" class="icon"><span>लाइव
                                     स्कोरेस</span></a></li>
                     </ul>
                 </div>
@@ -352,7 +352,7 @@
                     </div>
                     <div class="cov-widget">
                         <!-- ------------------ feeds Widget ---------------------- -->
-                        <ul class="feed-lst" style="display: none">
+                        <ul id="contentOne" class="feed-lst">
                             <li>
                                 <a href="">
                                     <figure>
@@ -400,7 +400,7 @@
                             </li>
                         </ul>
                         <!-- ------------------ feeds video Widget ---------------------- -->
-                        <ul class="feed-lst" style="display: none">
+                        <ul id="contentTwo" class="feed-lst">
                             <li>
                                 <a href="">
                                     <figure>
@@ -453,7 +453,7 @@
                             </li>
                         </ul>
                         <!-- ------------------ feeds web story Widget ---------------------- -->
-                        <ul class="live-story" style="display: none">
+                        <ul id="contentThree" class="live-story">
                             <li>
                                 <a href="">
                                     <figure>
@@ -490,7 +490,7 @@
                             </li>
 
                         </ul>
-                        <div class="suggestions" style="display: none;">
+                        <div id="contentFour" class="suggestions">
                           <h2>सुझाव दें</h2>
                           <p>क्या आदित्य L1 मिशन सफल होगा ? क्या ISRO का आदित्य L1 अपने गंतव्य स्थान तक पहुचेगा ?</p>
                           <button type="button">हाँ</button>
@@ -499,7 +499,7 @@
                   
                         </div>
 
-                        <div class="live-scorecard">
+                        <div id="contentFive" class="live-scorecard">
                             <iframe src="https://widget.crictimes.org/" style="width:100%;min-height: 600px;" frameborder="0" scrolling="yes"></iframe>
                         </div>
 
@@ -629,5 +629,59 @@
     </div>
 
 </body>
+<script type="text/javascript">
+    document.getElementById("tabOne").addEventListener("click", function () {
+        showOne();
+    });
+    document.getElementById("tabTwo").addEventListener("click", function () {
+        showTwo();
+    });
+    document.getElementById("tabThree").addEventListener("click", function () {
+        showThree();
+    });
+    document.getElementById("tabFour").addEventListener("click", function () {
+        showFour();
+    });
+    document.getElementById("tabFive").addEventListener("click", function () {
+        showFive();
+    });
+
+    function showOne() {
+        document.getElementById("contentOne").style.display = "flex";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showTwo() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "flex";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showThree() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "flex";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showFour() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "flex";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showFive() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "flex";
+    }
+
+</script>
 
 </html>
