@@ -487,8 +487,51 @@ ul.listContainer .imagecontant p {
     display: none;
 }
 
+.heeadings{
+    padding: 14px 16px;
+    position: relative;
+}
+
+.heeadings:before{
+    content: " ";
+    width: 7px;
+    height: 28px;
+    background-color: #EF412F;
+    position: absolute;
+    left: 0px;
+}
 
 
+.post-blog{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+.post-blog li{
+    width: calc(33% - 30px);
+}
+
+.post-blog li a{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.post-blog li div{
+    width: calc(50% - 10px);
+}
+
+.post-blog li p{
+    font-size: 12px;
+}
+
+.post-blog li div img{
+    width: 100%;
+}
 @media only screen and (max-width: 767px) {
 
     ul.listContainer,
@@ -598,3 +641,5 @@ ul.listContainer .imagecontant p {
 .coverage-detailed .tabs-box .related-grid .related-list li {
     width: calc(33% - 16px);
 }
+
+
