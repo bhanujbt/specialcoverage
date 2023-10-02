@@ -181,7 +181,6 @@ ul.listContainer .imagecontant p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: auto;
 }
 
 .coverage-detailed .tabs-box .cov-nav .tabs {
