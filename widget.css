@@ -223,6 +223,7 @@ ul.listContainer .imagecontant p {
     line-height: 30px;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .coverage-detailed .tabs-box .cov-nav .tabs>:first-child a {
@@ -504,6 +505,19 @@ ul.listContainer .imagecontant p {
     ul.listContainer li:first-child .img,
     ul.listContainer li:first-child .imagecontant {
         width: 100%;
+    }
+
+    ul.listContainer li:first-child a {
+        flex-direction: column;
+    }
+
+    ul.listContainer li:first-child a .img {
+        width: calc(100% - 35px);
+    }
+
+    ul.listContainer li:first-child a .imagecontant {
+        width: 100%;
+     
     }
 
     .special-coverage .container {
