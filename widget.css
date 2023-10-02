@@ -163,33 +163,6 @@ ul.listContainer .imagecontant p {
 }
 
 
-@media only screen and (max-width: 767px) {
-
-    ul.listContainer,
-    ul.listContainer li:first-child {
-        flex-direction: column;
-    }
-
-    ul.listContainer li,
-    ul.listContainer li:first-child .img,
-    ul.listContainer li:first-child .imagecontant {
-        width: 100%;
-    }
-
-    .special-coverage{
-        padding: 0 30px;
-    }
-
-    ul.listContainer {
-        gap: 16px;
-    }
-    
-    .topheadingpoint {
-        margin: 40px 0 40px 0;
-    }
-
-
-}
 
 
 .coverage-detailed .tabs-box {
@@ -431,7 +404,7 @@ ul.listContainer .imagecontant p {
 .coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions{
     display: flex;
     flex-direction: column;
-    gap: 20;
+    gap: 20px;
     font-size: 28px;
 }
 
@@ -465,4 +438,55 @@ ul.listContainer .imagecontant p {
     cursor: pointer;
     border-radius: 6px;
     border: solid 1px #EF412F;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    ul.listContainer,
+    ul.listContainer li:first-child {
+        flex-direction: column;
+    }
+
+    ul.listContainer li,
+    ul.listContainer li:first-child .img,
+    ul.listContainer li:first-child .imagecontant {
+        width: 100%;
+    }
+
+    .special-coverage{
+        padding: 0 30px;
+    }
+
+    ul.listContainer {
+        gap: 16px;
+    }
+    
+    .topheadingpoint {
+        margin: 40px 0 40px 0;
+    }
+
+    .coverage-detailed .tabs-box .cov-grid {
+        flex-direction: column;
+    }
+
+    .coverage-detailed .tabs-box .cov-grid .cov-detailed {
+        width: calc(100% - 0px);
+    }
+    .coverage-detailed .tabs-box {
+        padding: 16px 0px;
+    }
+
+    .coverage-detailed .tabs-box .cov-grid .cov-widget {
+        width: calc(100% - 0px);
+    }
+
+
+    .coverage-detailed .tabs-box .cov-nav .tabs a span{
+        text-wrap: nowrap;
+
+    }
+
+
 }
