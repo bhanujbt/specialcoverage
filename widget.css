@@ -103,6 +103,9 @@ ul.listContainer .datetime {
     gap: 20px;
     flex-direction: row;
 }
+ul.listContainer .datetime span:last-child:after {
+    display: none;
+}
 
 ul.listContainer .datetime span:first-child:after {
     content: " ";
@@ -252,6 +255,17 @@ ul.listContainer .imagecontant p {
     top: 8px;
 }
 
+.coverage-detailed .tabs-box .cov-nav .tabs>:last-child a:after {
+    content: "";
+    position: absolute;
+    display: none;
+    height: 12px;
+    width: 1px;
+    background-color: #C7C7C7;
+    right: -16px;
+    top: 8px;
+}
+
 .coverage-detailed .tabs-box .cov-nav .tabs li a:hover {
     text-decoration: underline;
     text-underline-position: under;
@@ -388,16 +402,26 @@ ul.listContainer .imagecontant p {
     width: calc(50% - 28px);
 }
 
+.coverage-detailed .tabs-box .cov-grid .cov-widget .live-story figure img, .coverage-detailed .tabs-box .cov-grid .cov-widget .live-story figure {
+    height: 297px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .coverage-detailed .tabs-box .cov-grid .cov-widget .live-story figure{
     position: relative;
 }
 
 .coverage-detailed .tabs-box .cov-grid .cov-widget .live-story figcaption{
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     color: #fff;
     z-index: 99;
-    left: 20px;
+    left: 0;
+    padding: 16px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 30%, rgba(0, 0, 0, 0.25) 58.85%, rgba(0, 0, 0, 0.28) 70.83%, rgba(0, 0, 0, 0.35) 100%);
 }
 
 .coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions{
@@ -448,14 +472,40 @@ ul.listContainer .imagecontant p {
         flex-direction: column;
     }
 
+    .coverage-detailed .container {
+        padding: 0px;
+    }
+
+    .coverage-detailed .tabs-box .cov-grid .cov-widget .live-story figure img, .coverage-detailed .tabs-box .cov-grid .cov-widget .live-story figure  {
+        height: 228px;
+        object-fit: cover;
+        width: 100%;
+    }
+
     ul.listContainer li,
     ul.listContainer li:first-child .img,
     ul.listContainer li:first-child .imagecontant {
         width: 100%;
     }
 
+    .special-coverage .container {
+        margin: 0 8px;
+    }
+
     .special-coverage{
-        padding: 0 30px;
+        padding: 0 0;
+    }
+    section {
+        padding: 0;
+    }
+
+    .coverage-detailed .tabs-box .cov-nav .tabs  {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .topheadingpoint div {
+        font-size: 22px;
     }
 
     ul.listContainer {
@@ -474,7 +524,7 @@ ul.listContainer .imagecontant p {
         width: calc(100% - 0px);
     }
     .coverage-detailed .tabs-box {
-        padding: 16px 0px;
+        padding: 16px 23px;
     }
 
     .coverage-detailed .tabs-box .cov-grid .cov-widget {
