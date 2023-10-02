@@ -441,7 +441,7 @@ ul.listContainer .imagecontant p {
 .coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     font-size: 28px;
 }
 
@@ -467,7 +467,7 @@ ul.listContainer .imagecontant p {
 .coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions button{
     background-color: #fff;
     color:#EF412F;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
     line-height: 42px; 
