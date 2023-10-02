@@ -37,6 +37,10 @@ ul.listContainer {
     flex-wrap: wrap;
 }
 
+ul.listContainer a *{
+    list-style: none;
+}
+
 ul.listContainer li {
     width: calc(50% - 35px);
     display: flex;
