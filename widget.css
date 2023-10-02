@@ -223,6 +223,7 @@ ul.listContainer .imagecontant p {
     line-height: 30px;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .coverage-detailed .tabs-box .cov-nav .tabs>:first-child a {
