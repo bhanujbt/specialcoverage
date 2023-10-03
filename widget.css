@@ -656,7 +656,7 @@ ul.listContainer .imagecontant p {
     }
 
     ul.listContainer li:first-child a .img {
-        width: calc(100% - 35px);
+        width: calc(100% - 0px);
     }
 
     ul.listContainer li:first-child a .imagecontant {
@@ -733,3 +733,6 @@ ul.listContainer .imagecontant p {
 }
 
 
+.headwrap, .footer{
+    display: none;
+}
