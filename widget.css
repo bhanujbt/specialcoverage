@@ -205,6 +205,8 @@ ul.listContainer .imagecontant p {
     flex-direction: row;
     gap: 32px;
     list-style: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .coverage-detailed .tabs-box .cov-nav .tabs li {
@@ -217,7 +219,7 @@ ul.listContainer .imagecontant p {
     flex-direction: row;
     gap: 12px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 30px;
@@ -392,9 +394,9 @@ ul.listContainer .imagecontant p {
 }
 
 .coverage-detailed .tabs-box .cov-grid .cov-widget .feed-lst li a .headlines {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 1.5em;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -465,9 +467,10 @@ ul.listContainer .imagecontant p {
 
 .coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions p{
     color: #00185E;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 10px;
+    text-align: center  ;
 }
 
 .coverage-detailed .tabs-box .cov-grid .cov-widget .suggestions button{
@@ -752,3 +755,166 @@ ul.listContainer .imagecontant p {
 /* .headwrap, .footer{
     display: none;
 } */
+
+
+
+/*----------------------- New index ***********************/
+
+.special-main{
+    position: relative;
+    margin-bottom: 210px;
+}
+
+
+.special-main h1{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    font-size: 40px;
+}
+
+.maincontant{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    top: 180px;
+}
+
+
+.boxheading{
+    position: absolute;  
+    bottom: 0;
+    width: 1280px;
+    z-index: 99;
+    margin: auto;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    bottom: -160px;
+    gap: 30px;
+}
+
+.boxheading div.box1{
+    width: 33%;
+    background-color: #ef412f;
+    padding: 10px;
+}
+.boxheading div.box1 img{
+    width: 100%;
+}
+
+.boxheading div.box1 h5{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 4px;
+}
+.boxheading div.box2{
+    width: 65%;
+    background-color: #fff;
+    padding: 10px;
+
+}
+
+.boxheading div.box2 ul{
+display: flex;
+flex-direction: row;
+gap: 20px;
+list-style: none;
+}
+
+.boxheading div.box2 ul li h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1 1 100%;
+    width: 100%;;
+}
+
+.boxheading div.box2 ul li img{
+    width: 100%;
+}
+
+.boxheading div.box2 ul li p{
+   font-size: 12px;
+   margin-bottom: 12px;
+}
+
+.boxheading div.box2 ul a{
+    text-decoration: none;
+}
+.special-coverage-new .player_img_wrap {
+    min-height: 650px;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    position: relative;
+    background-color: #05105c;
+}
+
+.special-coverage-new .story_img_box {
+    position: relative;
+    width: 1180px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.special-coverage-new .story_img_box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 22%;
+    top: 0;
+    left: 0px;
+    box-shadow: inset 240px 8px 109px -106px #05105c;
+    z-index: 2;
+}
+
+
+.special-coverage-new .story_img_box::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 22%;
+    top: 0;
+    right: 0px;
+    box-shadow: inset -240px 8px 109px -106px #05105c;
+    z-index: 2;
+}
+
+.special-coverage-new .special-main .top-head h3 {
+    font-size: 10vh;
+    line-height: 30px;
+    color: #ffff;
+    font-weight: 600;
+}
+
+ .topheadnew h3{
+    font-size: 18vh;
+    text-shadow: 3px 5px 11px rgba(0,0,0,0.38);
+    color: #fff;
+}
+
+.topheadnew p{
+    font-size: 22px;
+    background: red;
+    display: flex;
+    height: 49px;
+    align-items: center;
+    width: max-content;
+    padding: 6px 20px 0px 20px;
+    border-radius: 90px;
+    color: #fff;    
+}
+
