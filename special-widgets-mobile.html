@@ -520,5 +520,58 @@
     </div>
 
 </body>
+<script type="text/javascript">
+    document.getElementById("tabOne").addEventListener("click", function () {
+        showOne();
+    });
+    document.getElementById("tabTwo").addEventListener("click", function () {
+        showTwo();
+    });
+    document.getElementById("tabThree").addEventListener("click", function () {
+        showThree();
+    });
+    document.getElementById("tabFour").addEventListener("click", function () {
+        showFour();
+    });
+    document.getElementById("tabFive").addEventListener("click", function () {
+        showFive();
+    });
 
+    function showOne() {
+        document.getElementById("contentOne").style.display = "flex";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showTwo() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "flex";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showThree() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "flex";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showFour() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "flex";
+        document.getElementById("contentFive").style.display = "none";
+    }
+    function showFive() {
+        document.getElementById("contentOne").style.display = "none";
+        document.getElementById("contentTwo").style.display = "none";
+        document.getElementById("contentThree").style.display = "none";
+        document.getElementById("contentFour").style.display = "none";
+        document.getElementById("contentFive").style.display = "flex";
+    }
+
+</script>
 </html>
