@@ -155,15 +155,17 @@
             <div class="tabs-box">
                 <div class="cov-nav">
                     <ul class="tabs">
-                        <li><a href=""><img src="./images/news-story.svg" alt="icons" class="icon"><span>न्यूज़
+                        <li><a id="tabOne"><img src="./images/news-story.svg" alt="icons" class="icon"><span>न्यूज़
                                     स्टोरीज</span></a></li>
-                        <li><a href=""><img src="./images/web-stories.svg" alt="icons" class="icon"><span>वेब
+                        <li><a id="tabTwo"><img src="./images/web-stories.svg" alt="icons" class="icon"><span>वेब
                                     स्टोरीज</span></a></li>
-                        <li><a href=""><img src="./images/video.svg" alt="icons" class="icon"><span>विडियो</span></a>
+                        <li><a id="tabThree"><img src="./images/video.svg" alt="icons"
+                                    class="icon"><span>विडियो</span></a>
                         </li>
-                        <li><a href=""><img src="./images/poll.svg" alt="icons" class="icon"><span>सुझाव दें</span></a>
+                        <li><a id="tabFour"><img src="./images/poll.svg" alt="icons" class="icon"><span>सुझाव
+                                    दें</span></a>
                         </li>
-                        <li><a href=""><img src="./images/live-scores.svg" alt="icons" class="icon"><span>लाइव
+                        <li><a id="tabFive"><img src="./images/live-scores.svg" alt="icons" class="icon"><span>लाइव
                                     स्कोरेस</span></a></li>
                     </ul>
                 </div>
@@ -185,10 +187,11 @@
                             <li><a href=""><img src="./images/twitter.svg" alt=""></a></li>
                             <li><a href=""><img src="./images/whats-app.svg" alt=""></a></li>
                         </ul>
+
                     </div>
                     <div class="cov-widget">
                         <!-- ------------------ feeds Widget ---------------------- -->
-                        <ul class="feed-lst" style="display:none">
+                        <ul id="contentOne" class="feed-lst">
                             <li>
                                 <a href="">
                                     <figure>
@@ -236,7 +239,7 @@
                             </li>
                         </ul>
                         <!-- ------------------ feeds video Widget ---------------------- -->
-                        <ul class="feed-lst" style="display: none">
+                        <ul id="contentTwo" class="feed-lst">
                             <li>
                                 <a href="">
                                     <figure>
@@ -289,7 +292,7 @@
                             </li>
                         </ul>
                         <!-- ------------------ feeds web story Widget ---------------------- -->
-                        <ul class="live-story" style="display: "">
+                        <ul id="contentThree" class="live-story">
                             <li>
                                 <a href="">
                                     <figure>
@@ -310,7 +313,7 @@
                             <li>
                                 <a href="">
                                     <figure>
-                                        <img src="images/live-story1.png" alt="Trulli" style="width:100%">
+                                        <img src="images/live-story2.png" alt="Trulli" style="width:100%">
                                         <figcaption>इसरो ने लॉन्च किया आदित्य एल1: सौर मिशन की एआई छवियां</figcaption>
                                     </figure>
                                 </a>
@@ -319,14 +322,14 @@
                             <li>
                                 <a href="">
                                     <figure>
-                                        <img src="images/live-story1.png" alt="Trulli" style="width:100%">
+                                        <img src="images/live-story.png" alt="Trulli" style="width:100%">
                                         <figcaption>इसरो ने लॉन्च किया आदित्य एल1: सौर मिशन की एआई छवियां</figcaption>
                                     </figure>
                                 </a>
                             </li>
 
                         </ul>
-                        <div class="suggestions" style="display: none;">
+                        <div id="contentFour" class="suggestions">
                             <h2>सुझाव दें</h2>
                             <p>क्या आदित्य L1 मिशन सफल होगा ? क्या ISRO का आदित्य L1 अपने गंतव्य स्थान तक पहुचेगा ?</p>
                             <button type="button">हाँ</button>
@@ -334,6 +337,13 @@
                             <button type="button">नहीं</button>
 
                         </div>
+
+                        <div id="contentFive" class="live-scorecard">
+                            <iframe src="https://widget.crictimes.org/" style="width:100%;min-height: 600px;"
+                                frameborder="0" scrolling="yes"></iframe>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
