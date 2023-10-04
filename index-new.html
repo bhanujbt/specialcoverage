@@ -321,7 +321,21 @@
                     <p>वर्ल्ड कप में ये फेब-4 दिग्गज मचाएंगे तबाही... वर्चस्व की जंग में कोहली सबसे आगे</p>
                 </div>
             </div>
-            <div class="player_img_wrap"><div class="story_img_box"><img src="/images/world-cup-cover-image.jpg" alt="player_image" height="651" width="100%"></div></div>
+            <div class="player_img_wrap">
+                <div class="story_img_box">
+                    <img src="/images/world-cup-cover-image.jpg" alt="player_image" height="651" width="100%"></div>
+                    <div class="countertime">
+                        <p>world cup 2023</p>
+                        <ul id="demo">
+                            <li class="circle days"></li>
+                            <li class="circle hours"></li>
+                            <li class="circle minutes"></li>
+                            <li class="circle seconds"></li>
+                          </ul>
+                          
+                    </div>
+                </div>
+                
 
             <div class="boxheading">
                 
@@ -511,7 +525,37 @@
             <h6>© Copyrights Janbhawna Times 2023. All rights reserved.</h6>
         </div>
     </div>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("Oct 5, 2023 14:00:00").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.querySelector(".days").innerHTML = days;
+  document.querySelector(".hours").innerHTML = hours;
+  document.querySelector(".minutes").innerHTML = minutes;
+  document.querySelector(".seconds").innerHTML = seconds;
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
 
 </html>

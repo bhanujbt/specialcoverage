@@ -918,12 +918,62 @@ list-style: none;
     color: #fff;    
 }
 
+.countertime{
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    z-index: 9;
+    font-size: 60px;
+    font-weight: 900;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.countertime p{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    background-color: #939040;
+    padding: 6px 10px 0px 10px;
+}
+
+.countertime #demo{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+}
+
+.countertime #demo li{
+    margin: 0px 10px -10px 10px;
+}
+
+.countertime #demo li::after {
+    width: 1px;
+    height: 20px;
+    content: " ";
+    position: absolute;
+    margin-left: 5px;
+    top: 67px;
+    border-right: dotted 7px #ef412f;}
+
+    .countertime #demo li:last-child:after{display: none;}
+
 
 @media only screen and (max-width: 767px) {
 
 .maincontant{
-    width: 94%;
-    top: 60px;
+    width: 100%;
+    top: inherit;
+    position: inherit;
+    text-align: center;
+    bottom: 0px;
+    padding: 20px 0;
+    background: #130100;
 }
 
 .maincontant h3{
