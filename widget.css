@@ -784,7 +784,7 @@ ul.listContainer .imagecontant p {
     width: 1280px;
     display: flex;
     justify-content: space-between;
-    top: 180px;
+    bottom: 180px;
 }
 
 
@@ -860,7 +860,7 @@ list-style: none;
     top: 0;
     right: 0;
     position: relative;
-    background-color: #05105c;
+    background-color: #240202;
 }
 
 .special-coverage-new .story_img_box {
@@ -877,7 +877,7 @@ list-style: none;
     width: 22%;
     top: 0;
     left: 0px;
-    box-shadow: inset 240px 8px 109px -106px #05105c;
+    box-shadow: inset 240px 8px 109px -106px #240202;
     z-index: 2;
 }
 
@@ -889,7 +889,7 @@ list-style: none;
     width: 22%;
     top: 0;
     right: 0px;
-    box-shadow: inset -240px 8px 109px -106px #05105c;
+    box-shadow: inset -240px 8px 109px -106px #240202;
     z-index: 2;
 }
 
@@ -901,7 +901,7 @@ list-style: none;
 }
 
  .topheadnew h3{
-    font-size: 18vh;
+    font-size: 78px;
     text-shadow: 3px 5px 11px rgba(0,0,0,0.38);
     color: #fff;
 }
