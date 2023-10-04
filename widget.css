@@ -749,6 +749,14 @@ ul.listContainer .imagecontant p {
         line-height: inherit;
         margin-bottom: 10px;
     }
+    .blacksection {
+        background: #fafafa;
+        padding: 16px 0;
+    }
+
+    section .tb-w-nav .tabhead a {
+        margin-left: 12px;
+    }
 
 
 }
